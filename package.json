@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-no-classes-by-css",
-  "version": "1.1.0",
+  "name": "@andreasnicolaou/eslint-plugin-no-classes-by-css",
+  "version": "1.2.0",
   "description": "ESLint plugin to disallow usage of By.css with CSS classes in Jasmine tests",
   "main": "index.js",
   "scripts": {
