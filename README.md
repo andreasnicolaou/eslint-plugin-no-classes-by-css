@@ -1,4 +1,4 @@
-# eslint-plugin-no-classes-by-css
+# @andreasnicolaou/eslint-plugin-no-classes-by-css
 ESLint plugin to disallow the use of `By.css` with CSS class selectors in Jasmine tests. This plugin helps enforce better practices by avoiding over-reliance on CSS classes for element selection in tests.
 
 # Installation
@@ -6,20 +6,20 @@ ESLint plugin to disallow the use of `By.css` with CSS class selectors in Jasmin
 Install the npm package
 ```bash
 # If eslint is installed globally
-npm install -g eslint-plugin-no-classes-by-css
+npm install -g @andreasnicolaou/eslint-plugin-no-classes-by-css
 
 # If eslint is installed locally
-npm install -D eslint-plugin-no-classes-by-css
+npm install -D @andreasnicolaou/eslint-plugin-no-classes-by-css
 ```
 
 Add the plugin to the plugins section and the rule to the rules section in your .eslintrc
 
 ```js
 "plugins": [
-  "no-classes-by-css"
+  "@andreasnicolaou/no-classes-by-css"
 ],
 "rules": {
-  "no-classes-by-css/no-classes-in-by-css": [
+  "@andreasnicolaou/no-classes-by-css/no-classes-by-css": [
     "error",
     {
       "allowIds": true,
