@@ -11,7 +11,7 @@
         "type": "git",
         "url": "https://github.com/andreasnicolaou/eslint-plugin-no-classes-by-css.git"
     },
-    "author": "Andreas Nicolaou anicolaou66@gmail.com",
+    "author": "Andreas Nicolaou <anicolaou66@gmail.com>",
     "license": "MIT",
     "peerDependencies": {
         "eslint": ">=6.0.0"
@@ -19,11 +19,11 @@
     "devDependencies": {
         "@typescript-eslint/parser": ">=5.0.0",
         "babel-eslint": "^10.1.0",
-        "eslint-config-prettier": "^10.0.1",
-        "eslint-plugin-prettier": "^5.2.2",
-        "prettier": "3.4.2",
+        "eslint-config-prettier": "^10.1.1",
+        "eslint-plugin-prettier": "^5.2.6",
+        "prettier": "3.5.3",
         "eslint": ">=6.0.0 < 9.0.0",
-        "mocha": "^9.0.0",
+        "mocha": "^11.1.0",
         "typescript": ">=4.0.0"
     },
     "dependencies": {
