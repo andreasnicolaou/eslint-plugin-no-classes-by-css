@@ -1,12 +1,13 @@
 name: CI Workflow Build
 on:
-    pull_request:
-        types:
-            - opened
-        branches:
-            - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+permissions:
+  contents: read
+  pull-requests: write
 jobs:
-    Test:
+    Lint_And_Test:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
