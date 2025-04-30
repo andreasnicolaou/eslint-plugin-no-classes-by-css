@@ -17,7 +17,7 @@
         "eslint": ">=6.0.0"
     },
     "devDependencies": {
-        "@typescript-eslint/parser": ">=5.0.0",
+        "@typescript-eslint/parser": ">=8.31.1",
         "babel-eslint": "^10.1.0",
         "eslint-config-prettier": "^10.1.2",
         "eslint-plugin-prettier": "^5.2.6",
