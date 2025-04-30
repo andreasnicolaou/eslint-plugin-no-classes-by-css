@@ -27,7 +27,7 @@
         "typescript": ">=4.0.0"
     },
     "dependencies": {
-        "@typescript-eslint/utils": "^8.24.1"
+        "@typescript-eslint/utils": "^8.31.1"
     },
     "keywords": [
         "eslint",
