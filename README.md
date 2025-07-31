@@ -2,6 +2,22 @@
 
 ESLint plugin to disallow the use of `By.css` with CSS class selectors in Jasmine tests. This plugin helps enforce better practices by avoiding over-reliance on CSS classes for element selection in tests.
 
+![JavaScript](https://img.shields.io/badge/JS-JavaScript-f7df1e?logo=javascript&logoColor=black)
+![GitHub contributors](https://img.shields.io/github/contributors/andreasnicolaou/eslint-plugin-no-classes-by-css)
+![GitHub License](https://img.shields.io/github/license/andreasnicolaou/eslint-plugin-no-classes-by-css)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/andreasnicolaou/eslint-plugin-no-classes-by-css/build.yaml)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/andreasnicolaou/eslint-plugin-no-classes-by-css)
+[![Known Vulnerabilities](https://snyk.io/test/github/andreasnicolaou/eslint-plugin-no-classes-by-css/badge.svg)](https://snyk.io/test/github/andreasnicolaou/eslint-plugin-no-classes-by-css)
+![Bundle Size](https://img.shields.io/bundlephobia/minzip/@andreasnicolaou/eslint-plugin-no-classes-by-css)
+
+![ESLint](https://img.shields.io/badge/linter-eslint-4B32C3.svg?logo=eslint)
+![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier)
+![Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg?logo=jest)
+![Maintenance](https://img.shields.io/maintenance/yes/2025)
+[![codecov](https://codecov.io/gh/andreasnicolaou/eslint-plugin-no-classes-by-css/graph/badge.svg?token=ELH4YWG68O)](https://codecov.io/gh/andreasnicolaou/eslint-plugin-no-classes-by-css)
+
+![NPM Downloads](https://img.shields.io/npm/dm/%40andreasnicolaou%2Feslint-plugin-no-classes-by-css)
+
 # Installation
 
 Install the npm package

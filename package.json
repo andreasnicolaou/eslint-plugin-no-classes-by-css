@@ -1,11 +1,18 @@
 {
     "name": "@andreasnicolaou/eslint-plugin-no-classes-by-css",
-    "version": "1.4.2",
+    "version": "1.5.0",
     "description": "ESLint plugin to disallow usage of By.css with CSS classes in Jasmine tests",
     "main": "index.js",
     "scripts": {
-        "test": "mocha lib/rules/*.test.js",
-        "format": "prettier --write ."
+        "coverage:open": "start coverage/index.html",
+        "format": "prettier --write .",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "test": "jest",
+        "test:coverage": "jest --coverage",
+        "test:watch": "jest --watch",
+        "test:ci": "jest --coverage --ci --watchAll=false --passWithNoTests",
+        "test:bundle": "npx bundlewatch"
     },
     "repository": {
         "type": "git",
@@ -16,24 +23,47 @@
     "peerDependencies": {
         "eslint": ">=6.0.0"
     },
+    "bundlewatch": {
+        "files": [
+            {
+                "path": "lib/**/*.js",
+                "maxSize": "2kB"
+            }
+        ]
+    },
     "devDependencies": {
-        "@typescript-eslint/parser": ">=8.37.0",
+        "@typescript-eslint/parser": ">=8.38.0",
         "babel-eslint": "^10.1.0",
-        "eslint-config-prettier": "^10.1.5",
-        "eslint-plugin-prettier": "^5.5.1",
+        "eslint": "^9.32.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.3",
+        "jest": "^30.0.5",
+        "bundlewatch": "^0.4.1",
         "prettier": "3.6.2",
-        "eslint": ">=6.0.0 < 10.0.0",
-        "mocha": "^11.5.0",
         "typescript": ">=5.8.3"
     },
     "dependencies": {
-        "@typescript-eslint/utils": "^8.37.0"
+        "@typescript-eslint/utils": "^8.38.0"
     },
     "keywords": [
         "eslint",
         "eslint-plugin",
+        "eslintplugin",
         "jasmine",
+        "protractor",
+        "webdriver",
+        "selenium",
         "By.css",
-        "no-classes"
+        "css-selectors",
+        "class-selectors",
+        "no-classes",
+        "testing",
+        "test-automation",
+        "e2e",
+        "end-to-end",
+        "ui-testing",
+        "code-quality",
+        "best-practices",
+        "maintainability"
     ]
 }
