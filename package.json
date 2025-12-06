@@ -1,6 +1,6 @@
 {
     "name": "@andreasnicolaou/eslint-plugin-no-classes-by-css",
-    "version": "1.5.1",
+    "version": "1.6.0",
     "description": "ESLint plugin to disallow usage of By.css with CSS classes in Jasmine tests",
     "main": "index.js",
     "scripts": {
@@ -39,7 +39,7 @@
         "eslint-plugin-prettier": "^5.5.4",
         "jest": "^30.2.0",
         "bundlewatch": "^0.4.1",
-        "prettier": "3.6.2",
+        "prettier": "3.7.4",
         "typescript": ">=5.9.3"
     },
     "dependencies": {
