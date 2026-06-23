@@ -1,6 +1,6 @@
 {
     "name": "@andreasnicolaou/eslint-plugin-no-classes-by-css",
-    "version": "1.8.1",
+    "version": "2.0.0",
     "description": "ESLint plugin to disallow usage of CSS class selectors in Angular By.css tests",
     "main": "index.js",
     "scripts": {
