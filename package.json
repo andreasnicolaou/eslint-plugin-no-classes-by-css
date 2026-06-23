@@ -1,7 +1,7 @@
 {
     "name": "@andreasnicolaou/eslint-plugin-no-classes-by-css",
-    "version": "1.8.1",
-    "description": "ESLint plugin to disallow usage of By.css with CSS classes in Jasmine tests",
+    "version": "2.0.0",
+    "description": "ESLint plugin to disallow usage of CSS class selectors in Angular By.css tests",
     "main": "index.js",
     "scripts": {
         "coverage:open": "start coverage/index.html",
@@ -32,18 +32,19 @@
         ]
     },
     "devDependencies": {
-        "@typescript-eslint/parser": ">=8.61.1",
+        "@typescript-eslint/parser": ">=8.62.0",
         "babel-eslint": "^10.1.0",
+        "bundlewatch": "^0.4.2",
         "eslint": "^10.5.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.6",
         "jest": "^30.4.2",
-        "bundlewatch": "^0.4.2",
-        "prettier": "3.8.3",
+        "prettier": "3.8.4",
         "typescript": ">=6.0.3"
     },
     "dependencies": {
-        "@typescript-eslint/utils": "^8.61.1"
+        "@typescript-eslint/utils": "^8.62.0",
+        "postcss-selector-parser": "^7.1.4"
     },
     "keywords": [
         "eslint",

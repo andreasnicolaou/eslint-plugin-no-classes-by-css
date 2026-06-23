@@ -1,6 +1,6 @@
 # @andreasnicolaou/eslint-plugin-no-classes-by-css
 
-ESLint plugin to disallow the use of `By.css` with CSS class selectors in Jasmine tests. This plugin helps enforce better practices by avoiding over-reliance on CSS classes for element selection in tests.
+ESLint plugin to disallow the use of CSS class selectors in Angular tests that call `By.css`. This plugin helps enforce better practices by avoiding over-reliance on CSS classes for element selection in tests.
 
 ![JavaScript](https://img.shields.io/badge/JS-JavaScript-f7df1e?logo=javascript&logoColor=black)
 ![GitHub contributors](https://img.shields.io/github/contributors/andreasnicolaou/eslint-plugin-no-classes-by-css)
@@ -38,28 +38,24 @@ Add the plugin to the plugins section and the rule to the rules section in your 
 ],
 "rules": {
   "@andreasnicolaou/no-classes-by-css/no-classes-by-css": [
-    "error",
-    {
-      "allowIds": true,
-      "allowTags": true
-    }
+    "error"
   ]
 }
 ```
 
 # Configuration
 
-- `allowIds`: If set to true, the plugin will allow using By.css with ID selectors (e.g., By.css('#elementId')).
-- `allowTags`: If set to true, the plugin will allow using By.css with tag selectors (e.g., By.css('button')).
+- `allowIds`: Defaults to true. If set to false, the plugin will report By.css calls with ID selectors (e.g., By.css('#elementId')).
+- `allowTags`: Defaults to true. If set to false, the plugin will report By.css calls with tag selectors (e.g., By.css('button')).
 - `disallowClasses`: By default, the plugin will disallow the use of CSS class selectors in By.css (e.g., By.css('.my-class')).
 
 # Usage
 
 This plugin enforces the following:
 
-- Disallow CSS class selectors (e.g., By.css('.my-class')) in Jasmine tests.
-- Optionally allow tag selectors (e.g., By.css('button')).
-- Optionally allow ID selectors (e.g., By.css('#my-id')).
+- Disallow CSS class selectors (e.g., By.css('.my-class'), By.css('button.primary')) in Angular tests.
+- Optionally disallow tag selectors (e.g., By.css('button')).
+- Optionally disallow ID selectors (e.g., By.css('#my-id')).
 
 To ensure proper usage, add the rule to your .eslintrc as shown above.
 
@@ -71,14 +67,10 @@ The following code will cause an ESLint error:
 const element = element(By.css('.my-class'));
 ```
 
-The correct usage would be either:
+Prefer a stable, test-oriented selector instead:
 
 ```js
-// With ID
-const element = element(By.css('#my-id'));
-
-// Or with a tag
-const element = element(By.css('button'));
+const element = element(By.css('[data-testid="submit"]'));
 ```
 
 # Autofixing
@@ -87,4 +79,4 @@ Currently, this plugin does not support automatic fixes for code violations. It 
 
 # Notice
 
-Make sure to follow best practices by using IDs or tag selectors when selecting elements for tests to ensure more stable and maintainable test code.
+Make sure to follow best practices by using stable, test-oriented attributes when selecting elements for tests.
