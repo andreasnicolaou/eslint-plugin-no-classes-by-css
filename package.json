@@ -44,7 +44,7 @@
     },
     "dependencies": {
         "@typescript-eslint/utils": "^8.68.0",
-        "postcss-selector-parser": "^7.1.5"
+        "postcss-selector-parser": "^7.1.6"
     },
     "keywords": [
         "eslint",
