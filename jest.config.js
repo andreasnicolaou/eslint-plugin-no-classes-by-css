@@ -3,6 +3,7 @@ module.exports = {
     testMatch: ['**/lib/**/*.test.js'],
     collectCoverageFrom: ['lib/**/*.js', 'index.js', '!lib/**/*.test.js'],
     coverageReporters: ['text', 'html', 'lcov'],
+    reporters: ['default', ['jest-junit', { outputDirectory: 'coverage', outputName: 'junit.xml' }]],
     coverageThreshold: {
         global: {
             branches: 80,
