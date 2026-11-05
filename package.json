@@ -35,13 +35,13 @@
         "@typescript-eslint/parser": ">=8.72.1",
         "babel-eslint": "^10.1.0",
         "bundlewatch": "^1.1.0",
-        "eslint": "^10.13.0",
+        "eslint": "^10.14.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.7",
         "jest": "^30.5.2",
         "jest-junit": "^17.0.0",
         "prettier": "3.9.10",
-        "typescript": ">=6.0.3"
+        "typescript": ">=7.0.2"
     },
     "dependencies": {
         "@typescript-eslint/utils": "^8.72.1",
